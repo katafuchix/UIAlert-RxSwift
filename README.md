@@ -14,7 +14,8 @@ struct AlertAction {
 
 extension UIViewController {
     
-    func showAlert(title: String?, message: String?, style: UIAlertController.Style, actions: [AlertAction]) -> Observable<Int>
+    func showAlert(title: String?, message: String?, style: UIAlertController.Style, actions: [AlertAction]) 
+     -> Observable<Int>
     {
         return Observable.create { observer in
             let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
@@ -38,12 +39,12 @@ extension UIViewController {
 
 sample
 ```
-            self.showAlert(title: "Alert Title", message: "message", style: .alert,
-                           actions: [AlertAction.action(title: "no", style: .destructive), AlertAction.action(title: "yes")]
+  self.showAlert(title: "Alert Title", message: "message", style: .alert,
+                actions: [AlertAction.action(title: "no", style: .destructive), AlertAction.action(title: "yes")]
                            
-                ).subscribe(onNext: { selectedIndex in
+  ).subscribe(onNext: { selectedIndex in
                 
-                    print(selectedIndex)
+     print(selectedIndex)
                     
-                }).disposed(by: self.rx.disposeBag)
+  }).disposed(by: self.rx.disposeBag)
 ```
