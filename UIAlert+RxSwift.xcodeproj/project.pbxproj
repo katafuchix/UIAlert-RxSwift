@@ -46,7 +46,6 @@
 				7225BAE86059680D3EC15979 /* Pods-UIAlert+RxSwift.debug.xcconfig */,
 				14EE52139F37DE1D3ECA5910 /* Pods-UIAlert+RxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -369,7 +368,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.wings.app.UIAlert-RxSwift";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.deskplate.UIAlert-RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.wings.app.UIAlert-RxSwift";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.deskplate.UIAlert-RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
